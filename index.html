@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/54487a6e35.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин заботливых товаров EcoSimple</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="container nav">
+                <li>
+                    <i class="fa-brands fa-pagelines"></i>
+                </li>
+                <li>
+                    <p class="logo">EcoSimple</p>
+                </li>
+                <li>
+                    <a href="#shop-items">Каталог</a>
+                </li>
+                <li>
+                    <a href="#contacts">Контакты</a>
+                </li>
+                <li>
+                    <div class="site-search">
+                        <input type="search" id="search-input">
+                        <button type="button" id="search-btn" class="fa fa-search"></i>
+                     </div>
+                 </li>
+            
+               <li>
+                <i class="fa-brands fa-pagelines"></i>
+                </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+
+    <div id="greet"></div>
+
+    <div class="filters">
+      <div class="filters-sort">
+        <label for="sort">Сортировка:</label>
+        <select name="sort" id="sort">
+          <option selected value="alphabet">По алфавиту</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="cheap">Сначала дешевые</option>
+          <option value="rating">Рейтинг</option>
+        </select>
+      </div>
+    </div>
+    <section id="shop-items">
+    </section>
+    <p id="nothing-found">Ничего не найдено</p>
+  </main>
+  <footer id="contacts" class="container">
+    <a href="#" class="logo">EcoSimple</a>
+  </footer>
+  <template id="greet-template">
+    <div class="greet-item">
+      <p></p>
+    </div>
+  </template>
+  <template id="item-template">
+    <div class="shop-item">
+      <img src="">
+      <div class="content">
+        <div class="tags"></div>
+        <h1></h1>
+        <p></p>
+      </div>
+      <div class="footer">
+        <span class="price"></span>
+        <div class="rating"></div>
+      </div>
+    </div>
+    </div>
+  </template>
+  <script src="script.js"></script>
+</body>
+</html>
